@@ -1,5 +1,7 @@
 function logger(req, res, next) {
   // DO YOUR MAGIC
+  console.log(`[${req.method}] ${req.path} ${req.timestamp}`)
+
 }
 
 function validateUserId(req, res, next) {
