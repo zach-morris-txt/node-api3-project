@@ -6,7 +6,6 @@ const Posts = require('../posts/posts-model.js')
 const Users = require('./users-model.js')
 
 const { 
-  logger, 
   validateUserId, 
   validateUser, 
   validatePost, 

@@ -1,9 +1,9 @@
-const User = require('../user/user-model.js')
-const Post = require('../post/post-model.js')
+const User = require('../users/users-model');
 
 function logger(req, res, next) {
   // DO YOUR MAGIC
   console.log(`[${req.method}] ${req.path} ${req.timestamp}`)
+  next()
 }
 
 function validateUserId(req, res, next) {
