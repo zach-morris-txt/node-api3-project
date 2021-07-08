@@ -2,7 +2,11 @@ const User = require('../users/users-model');
 
 function logger(req, res, next) {
   // DO YOUR MAGIC
-  console.log(`[${req.method}] ${req.path} ${req.timestamp}`)
+  const date = new Date()
+  console.log(`
+    [${req.method}] 
+    ${req.originalUrl} 
+    ${date.toLocaleString()}`)
   next()
 }
 
